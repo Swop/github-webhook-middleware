@@ -1,0 +1,40 @@
+{
+    "name": "swop/github-webhook-middleware",
+    "license": "MIT",
+    "type": "library",
+    "description": "PSR-7 style & PSR-15 compatible middleware which will verify if the incoming GitHub web hook request is correctly signed.",
+    "keywords": [
+        "github",
+        "webhook",
+        "security",
+        "middleware",
+        "psr7"
+    ],
+    "authors": [
+        {
+            "name": "Sylvain Mauduit",
+            "email": "sylvain@mauduit.fr",
+            "homepage": "https://github.com/Swop"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "swop/github-webhook": "^2.0",
+        "psr/http-message": "^1.0",
+        "http-interop/http-middleware": "^0.2.1",
+        "zendframework/zend-diactoros": "^1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swop\\GitHubWebHookMiddleware\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
